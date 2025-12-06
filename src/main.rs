@@ -18,7 +18,7 @@ fn elapsed_since(start_time: &Instant) -> String {
 fn main() {
     let args: Vec<String> = env::args().collect();
     let days: Vec<_> = match args.len() {
-        1 => (1..=25).collect(),
+        1 => (1..=12).collect(),
         _ => args.iter().skip(1).map(|d| d.parse().unwrap()).collect(),
     };
     let global_start_time = Instant::now();
@@ -35,26 +35,13 @@ fn main() {
                 3 => advent_of_code_2025::day03::run,
                 4 => advent_of_code_2025::day04::run,
                 5 => advent_of_code_2025::day05::run,
-                // 6 => advent_of_code_2025::day06::run,
+                6 => advent_of_code_2025::day06::run,
                 // 7 => advent_of_code_2025::day07::run,
                 // 8 => advent_of_code_2025::day08::run,
                 // 9 => advent_of_code_2025::day09::run,
                 // 10 => advent_of_code_2025::day10::run,
                 // 11 => advent_of_code_2025::day11::run,
                 // 12 => advent_of_code_2025::day12::run,
-                // 13 => advent_of_code_2025::day13::run,
-                // 14 => advent_of_code_2025::day14::run,
-                // 15 => advent_of_code_2025::day15::run,
-                // 16 => advent_of_code_2025::day16::run,
-                // 17 => advent_of_code_2025::day17::run,
-                // 18 => advent_of_code_2025::day18::run,
-                // 19 => advent_of_code_2025::day19::run,
-                // 20 => advent_of_code_2025::day20::run,
-                // 21 => advent_of_code_2025::day21::run,
-                // 22 => advent_of_code_2025::day22::run,
-                // 23 => advent_of_code_2025::day23::run,
-                // 24 => advent_of_code_2025::day24::run,
-                // 25 => advent_of_code_2025::day25::run,
                 _ => unreachable!(),
             };
             day_func(input);
