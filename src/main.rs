@@ -36,7 +36,7 @@ fn main() {
                 4 => advent_of_code_2025::day04::run,
                 5 => advent_of_code_2025::day05::run,
                 6 => advent_of_code_2025::day06::run,
-                // 7 => advent_of_code_2025::day07::run,
+                7 => advent_of_code_2025::day07::run,
                 // 8 => advent_of_code_2025::day08::run,
                 // 9 => advent_of_code_2025::day09::run,
                 // 10 => advent_of_code_2025::day10::run,
